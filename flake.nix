@@ -26,6 +26,7 @@
 	    ./modules/network-packages.nix
 	    ./modules/radio.nix
             ./modules/security.nix
+	  #  ./modules/yubikey.nix
 	  ];
       };
     };
