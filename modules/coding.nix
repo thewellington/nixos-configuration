@@ -7,6 +7,9 @@
     # tools
     direnv
     git
+
+    vim
+
     
     #languages
     python313
