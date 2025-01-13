@@ -1,6 +1,6 @@
 users.users.thewellington.isNormalUser = true;
 home-manager.users.thewellington = { config, pkgs, ... }: {
-  home.packages = [ pkgs.atool pkgs.httpie pkgs.vim ];
+  home.packages = [ pkgs.atool pkgs.httpie ];
 
   programs.bash.enable = true;
 
@@ -15,10 +15,6 @@ home-manager.users.thewellington = { config, pkgs, ... }: {
     extraConfig = ''
 	set mouse=a
     '';
-    vimrcConfig = {
-      customRC = ''
-        set numbers
-      '';
     };
 
   };
