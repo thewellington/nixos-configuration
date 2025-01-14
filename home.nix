@@ -8,12 +8,15 @@
   # misc
   cowsay
 
-  #utils
+  # utils
   gnutar
   zip
   unzip
   p7zip
-  
+  lsof
+  strace
+  ltrace
+
   # networking
   ipcalc
   dnsutils
