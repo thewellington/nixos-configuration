@@ -1,8 +1,6 @@
-#### Installs qFLippers
+#### Installs qFlipper
 
-{ config, lib, pkgs, ... }:
-
-{
+{ config, lib, pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     qflipper
   ];

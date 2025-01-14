@@ -20,13 +20,10 @@
         inherit system;
         modules = [ 
 	  ./configuration.nix
-	  ./modules/coding.nix
-	  ./modules/flipper.nix
-          ./modules/internet-packages.nix
-	  ./modules/network-packages.nix
-	  ./modules/radio.nix
+          ./modules/flipper.nix
+          ./modules/radio.nix
           ./modules/security.nix
-	];
+        ];
       };
     };
 
@@ -37,6 +34,8 @@
         inherit pkgs;
         modules = [ ./home.nix ];
       };
+      programs.home-manager.useGlobalPkgs = true;
+      
     };
   };
 }

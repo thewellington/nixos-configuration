@@ -1,8 +1,13 @@
 { config, pkgs, ... }: {
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+    };
+  };
+
+  programs.home-manager.enable = true;
   home.username = "thewellington";
   home.homeDirectory = "/home/thewellington";
-  programs.home-manager.enable = true;
-
   home.packages = with pkgs; [
   
   # misc
@@ -17,19 +22,17 @@
   strace
   ltrace
 
-  # networking
-  ipcalc
-  dnsutils
-  ldns
-  # nmap
   
   # productivity
   glow
-  #vim # currently installed by system config
   
-  # coding
-  #git
 
+  ];
+
+  imports = [
+    ./modules/coding.nix
+    ./modules/internet.nix
+    ./modules/network.nix
   ];
 
   programs.vim = {
