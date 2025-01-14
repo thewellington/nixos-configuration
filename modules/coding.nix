@@ -1,8 +1,6 @@
 #### Installs coding tools
 
-{ config, lib, pkgs, ... }:
-
-{
+{ config, lib, pkgs, ... }: {
   home.packages = with pkgs; [
     # tools
     direnv
@@ -12,5 +10,16 @@
     #languages
     python313
   ];
-}
 
+  programs.vim = {
+    enable = true;
+    plugins = with pkgs.vimPlugins; [ vim-airline ];
+    settings = {
+      ignorecase = true;
+      number = true;
+    };
+    extraConfig = ''
+     set mouse=a
+    ''; 
+  };
+}
