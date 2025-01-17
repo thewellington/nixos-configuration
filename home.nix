@@ -14,6 +14,7 @@
     ./modules/coding.nix
     ./modules/internet.nix
     ./modules/network.nix
+    ./modules/shell.nix
     ./modules/utilities.nix
   ];
 

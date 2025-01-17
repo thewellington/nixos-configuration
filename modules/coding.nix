@@ -4,8 +4,6 @@
   home.packages = with pkgs; [
     # tools
     direnv
-    git
-    # vim
     
     #languages
     python313
@@ -22,4 +20,11 @@
      set mouse=a
     ''; 
   };
+
+  programs.git = {
+    enable = true;
+    userName = "W. S. Wellington";
+    userEmail = "thewellington@gmail.com";
+  };
+
 }
