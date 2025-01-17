@@ -9,13 +9,13 @@
   home.username = "thewellington";
   home.homeDirectory = "/home/thewellington";
   home.packages = with pkgs; [];
-  
+
   imports = [
     ./modules/coding.nix
     ./modules/internet.nix
     ./modules/network.nix
-    ./modules/shell.nix
     ./modules/utilities.nix
+    ./modules/shell.nix
   ];
 
 

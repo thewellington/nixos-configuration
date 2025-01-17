@@ -17,7 +17,7 @@
       number = true;
     };
     extraConfig = ''
-     set mouse=a
+     set mouse-=a
     ''; 
   };
 
