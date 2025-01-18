@@ -8,6 +8,7 @@
   zip
   unzip
   p7zip
+  screen
 
   # system
   lsof
