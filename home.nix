@@ -11,6 +11,7 @@
   home.packages = with pkgs; [];
 
   imports = [
+    ./modules/fonts.nix
     ./modules/coding.nix
     ./modules/internet.nix
     ./modules/network.nix
