@@ -7,6 +7,7 @@
     
     #languages
     python313
+    python313Packages.pip
   ];
 
   programs.vim = {
