@@ -21,6 +21,9 @@
   # productivity
   glow
 
+  # gnome
+  gnome-tweaks
+
   ];
 }
 

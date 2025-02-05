@@ -12,4 +12,4 @@ Running `home-manager switch --flake .` will apply the home-manager config to th
 - set up vim to provide a folder listing
 - setup NordVPN
 - figure out what we need to do to use this same config on other systems - allowing us to use the `configuration.nix` and `hardware-configuration.nix` files from from those systems
-install SourceCode Pro Font
+- ~~install SourceCode Pro Font~~
