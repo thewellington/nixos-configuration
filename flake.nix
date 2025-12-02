@@ -16,7 +16,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in {
     nixosConfigurations = {
-      pinkie-pie = lib.nixosSystem {
+      rainbow-dash = lib.nixosSystem {
         inherit system;
         modules = [ 
 	  ./configuration.nix
@@ -34,8 +34,12 @@
         inherit pkgs;
         modules = [ ./home.nix ];
       };
+      mariawellington = home-manager.lib.homeMangerConfiguration {
+        inherit pkgs;
+        modules = [ ./home.nix ];
       programs.home-manager.useGlobalPkgs = true;
       
+      };
     };
   };
 }
