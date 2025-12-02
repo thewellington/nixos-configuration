@@ -9,7 +9,11 @@ Running `home-manager switch --flake .` will apply the home-manager config to th
 Upgrading Nixos
 1. `sudo nix-channel --update
 2. `sudo nix flake update`
-`sudo nixos-rebuild boot -I nixos-config=/home/thewellington/nixos-configuration/configuration.nix --upgrade`
+`sudo noxos-rebuild boot --flake .
+
+
+
+
 ## TODO
 - Install Powerline Fonts for vim-airline to take advantage of
 - Figure out where .vimrc is getting written to
