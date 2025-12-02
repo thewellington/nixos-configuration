@@ -8,18 +8,19 @@
     _1password-gui
     gnupg
 
-    # vpn
+    ## vpn
     #wgnord
     #gnomeExtensions.nordvpn-quick-toggle
 
-    # yubikey
-    yubikey-manager
+    ## yubikey
+    # yubikey-manager
     # yubikey-manager-qt
-    yubikey-agent
-    yubikey-touch-detector
-    yubikey-personalization
-    yubikey-personalization-gui
-    piv-agent
+    # yubikey-agent
+    # yubikey-touch-detector
+    # yubikey-personalization
+    # yubikey-personalization-gui
+    # piv-agent
+    yubioath-flutter
   ];
 
 
