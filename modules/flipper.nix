@@ -2,7 +2,7 @@
 
 { config, lib, pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    qflipper
+    qFlipper
   ];
 
 # serial port access
