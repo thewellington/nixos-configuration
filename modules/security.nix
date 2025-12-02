@@ -14,7 +14,7 @@
 
     # yubikey
     yubikey-manager
-    yubikey-manager-qt
+    # yubikey-manager-qt
     yubikey-agent
     yubikey-touch-detector
     yubikey-personalization
