@@ -92,6 +92,14 @@
     ];
   };
 
+  users.users.mariawellington = {
+    isNormalUser = true;
+    description = "mariawellington";
+    extraGroups = [ "networkmanager" "wheel" "openrazer" ];
+    packages = with pkgs; [
+    ];
+  };
+
   # Install firefox.
   programs.firefox.enable = true;
 
