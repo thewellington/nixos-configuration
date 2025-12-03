@@ -20,7 +20,7 @@
     # yubikey-personalization
     # yubikey-personalization-gui
     # piv-agent
-    yubioath-flutter
+    # yubioath-flutter
   ];
 
 

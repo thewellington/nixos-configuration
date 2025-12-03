@@ -20,8 +20,6 @@
         inherit system;
         modules = [ 
 	  ./configuration.nix
-          ./modules/flipper.nix
-          ./modules/radio.nix
           ./modules/security.nix
         ];
       };
