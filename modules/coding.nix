@@ -24,8 +24,8 @@
 
   programs.git = {
     enable = true;
-    userName = "W. S. Wellington";
-    userEmail = "thewellington@gmail.com";
+    settings.user.name = "W. S. Wellington";
+    settings.user.email = "thewellington@gmail.com";
   };
 
 }
