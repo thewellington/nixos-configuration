@@ -6,7 +6,7 @@
     dig
     nmap
     ipcalc
-    dnsutils
+#    dnsutils
     ldns
   ];
 }
