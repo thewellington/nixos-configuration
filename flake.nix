@@ -4,13 +4,13 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager/master";  
+      url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = {self, nixpkgs, home-manager, ...  }: 
-    let 
+  outputs = {self, nixpkgs, home-manager, ...  }:
+    let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
       pkgs = nixpkgs.legacyPackages.${system};
@@ -18,8 +18,8 @@
     nixosConfigurations = {
       pinkie-pie = lib.nixosSystem {
         inherit system;
-        modules = [ 
-	  ./configuration.nix
+        modules = [
+	        ./configuration.nix
           ./modules/flipper.nix
           ./modules/radio.nix
           ./modules/security.nix
@@ -35,7 +35,7 @@
         modules = [ ./home.nix ];
       };
       programs.home-manager.useGlobalPkgs = true;
-      
+
     };
   };
 }
