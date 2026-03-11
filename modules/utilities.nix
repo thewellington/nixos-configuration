@@ -23,7 +23,6 @@
 
   # gnome
   gnome-tweaks
-
+  gnome-network-displays
   ];
 }
-
