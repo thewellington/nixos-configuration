@@ -7,9 +7,9 @@ Running `sudo nixos-rebuild switch --flake .` will apply the current config to t
 Running `home-manager switch --flake .` will apply the home-manager config to the current user
 
 Upgrading Nixos
-1. `sudo nix-channel --update
+1. `sudo nix-channel --update`
 2. `sudo nix flake update`
-`sudo noxos-rebuild boot --flake .
+3. `sudo nixos-rebuild boot --flake .`
 
 
 
