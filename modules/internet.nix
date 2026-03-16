@@ -6,6 +6,7 @@
     discordo
     maestral
     maestral-gui
+    mailspring
     zoom-us
   ];
 }
