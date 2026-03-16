@@ -11,7 +11,7 @@
       ./modules/razer.nix
     ];
 
-  
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -102,7 +102,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    gnomeExtensions.topicons-plus
+    # gnomeExtensions.topicons-plus
     gnomeExtensions.appindicator
   ];
 
