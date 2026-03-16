@@ -4,6 +4,7 @@
     brave
     discord
     discordo
+    geary
     maestral
     maestral-gui
     mailspring
