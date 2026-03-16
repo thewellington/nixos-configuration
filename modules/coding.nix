@@ -32,7 +32,7 @@
          light = "One Light";
        };
        hour_format = "hour24";
-       vim_mode = true;
+       vim_mode = false;
      };
    };
 
