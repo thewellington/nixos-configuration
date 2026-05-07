@@ -9,33 +9,26 @@
     };
   };
 
-  outputs = {self, nixpkgs, home-manager, ...  }:
+  outputs = { self, nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
-      pkgs = nixpkgs.legacyPackages.${system};
     in {
-    nixosConfigurations = {
-      pinkie-pie = lib.nixosSystem {
+      nixosConfigurations.pinkie-pie = lib.nixosSystem {
         inherit system;
         modules = [
-	        ./configuration.nix
+          ./configuration.nix
           ./modules/flipper.nix
           ./modules/radio.nix
           ./modules/security.nix
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.thewellington = import ./home.nix;
+          }
         ];
       };
     };
-
-    defaultPackage.${system} = home-manager.defaultPackage.${system};
-
-    homeConfigurations = {
-      thewellington = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ ./home.nix ];
-      };
-      programs.home-manager.useGlobalPkgs = true;
-
-    };
-  };
 }

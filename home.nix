@@ -1,10 +1,4 @@
 { config, pkgs, ... }: {
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-    };
-  };
-
   programs.home-manager.enable = true;
   home.username = "thewellington";
   home.homeDirectory = "/home/thewellington";

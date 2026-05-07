@@ -1,15 +1,14 @@
 # nixos-configuration
 
-`./flake.nix` is the entry point for this Flake.   
+`./flake.nix` is the entry point for this Flake.
 
-Running `sudo nixos-rebuild switch --flake .` will apply the current config to the system
+Home Manager is integrated into the NixOS configuration via `home-manager.nixosModules.home-manager`, so a single rebuild applies both system and user configuration.
 
-Running `home-manager switch --flake .` will apply the home-manager config to the current user
+Running `sudo nixos-rebuild switch --flake .#pinkie-pie` will apply the current system and home-manager config.
 
 Upgrading Nixos
-1. `sudo nix-channel --update`
-2. `sudo nix flake update`
-3. `sudo nixos-rebuild boot --flake .`
+1. `sudo nix flake update`
+2. `sudo nixos-rebuild boot --flake .#pinkie-pie`
 
 
 
