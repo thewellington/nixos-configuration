@@ -22,7 +22,7 @@
     '';
   };
 
-   programs.zed-editor = {
+  programs.zed-editor = {
      enable = true;
      extensions = [ "nix" "toml" "rust" "make" "python" "bash" ];
      userSettings = {
@@ -41,7 +41,6 @@
     settings.user.name = "W. S. Wellington";
     settings.user.email = "thewellington@gmail.com";
   };
-
 
 
 }
