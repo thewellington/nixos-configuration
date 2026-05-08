@@ -12,10 +12,9 @@ Upgrading Nixos
 
 
 
-
 ## TODO
 - Install Powerline Fonts for vim-airline to take advantage of
-- Figure out where .vimrc is getting written to
+- ~~figure out where .vimrc is getting written to~~
 - set up vim to provide a folder listing
 - setup NordVPN
 - figure out what we need to do to use this same config on other systems - allowing us to use the `configuration.nix` and `hardware-configuration.nix` files from from those systems

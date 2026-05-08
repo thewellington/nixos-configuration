@@ -1,3 +1,5 @@
+# home-manager module
+
 { config, lib, pkgs, ... }: {
 
   home.packages = with pkgs; [

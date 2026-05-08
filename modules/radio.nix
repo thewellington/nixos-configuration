@@ -1,3 +1,5 @@
+# nix module
+
 #### Installs chirp to configure radios
 
 { config, lib, pkgs, ... }:

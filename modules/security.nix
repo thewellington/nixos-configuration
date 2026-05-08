@@ -1,3 +1,5 @@
+# nix module
+
 #### Installs security tools
 
 { config, lib, pkgs, ... }:
@@ -22,7 +24,10 @@
     # piv-agent
     yubioath-flutter
   ];
-
-
 }
+
+#{
+#  services.nordvpn.enable = true;
+#  environment.systemPackages = [ pkgs.nordvpn ];
+#}
 

@@ -1,3 +1,5 @@
+# home-manager module
+
 #### Installs coding tools
 
 { config, lib, pkgs, ... }: {

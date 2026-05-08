@@ -1,3 +1,5 @@
+# mone-manager module
+
 #### Installs coding tools
 
 { config, lib, pkgs, ... }: {

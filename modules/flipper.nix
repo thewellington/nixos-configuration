@@ -1,3 +1,5 @@
+# nix module
+
 #### Installs qFlipper
 
 { config, lib, pkgs, ... }: {

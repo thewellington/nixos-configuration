@@ -1,16 +1,16 @@
-#### manages shell
+# home-manager module
 
 { config, lib, pkgs, ... }: {
-  home.packages = with pkgs; [liquidprompt ];
+ # home.packages = with pkgs; [liquidprompt ];
 
   programs.bash = {
     enable = true;
     bashrcExtra = ''
       ## .bashrc - managed by home-manager
       #
-     
+
       # add liquidprompt
-      source ~/.nix-profile/bin/liquidprompt
+ #     source ~/.nix-profile/bin/liquidprompt
     '';
   };
 
