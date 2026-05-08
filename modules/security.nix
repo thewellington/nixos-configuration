@@ -3,7 +3,6 @@
 #### Installs security tools
 
 { config, lib, pkgs, ... }:
-
 {
   environment.systemPackages = with pkgs; [
     _1password-cli
@@ -25,9 +24,4 @@
     yubioath-flutter
   ];
 }
-
-#{
-#  services.nordvpn.enable = true;
-#  environment.systemPackages = [ pkgs.nordvpn ];
-#}
 
