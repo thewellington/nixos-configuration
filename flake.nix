@@ -21,7 +21,6 @@
           ./modules/flipper.nix
           ./modules/radio.nix
           ./modules/security.nix
-          ./modules/nordvpn.nix
 
           home-manager.nixosModules.home-manager
           {

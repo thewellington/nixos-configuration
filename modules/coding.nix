@@ -6,7 +6,7 @@
   home.packages = with pkgs; [
     # tools
     direnv
-
+    cursor-cli
     #languages
     python313
     python313Packages.pip
