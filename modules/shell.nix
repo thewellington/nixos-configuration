@@ -3,6 +3,8 @@
 { config, lib, pkgs, ... }: {
  # home.packages = with pkgs; [liquidprompt ];
 
+  home.sessionPath = [ "$HOME/bin" ];
+
   programs.bash = {
     enable = true;
     bashrcExtra = ''
