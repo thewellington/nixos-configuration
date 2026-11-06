@@ -74,6 +74,28 @@
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
+
+    # AirPlay/RAOP client: discover nearby receivers as PipeWire sinks
+    # (opens UDP 6001-6002 for timing/control)
+    raopOpenFirewall = true;
+    extraConfig.pipewire."10-airplay" = {
+      "context.modules" = [
+        {
+          name = "libpipewire-module-raop-discover";
+          # Uncomment if you get dropouts/glitches:
+          # args = {
+          #   "raop.latency.ms" = 500;
+          # };
+        }
+      ];
+    };
+  };
+
+  # mDNS/Zeroconf discovery for AirPlay receivers (and printers, etc.)
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).

@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     # tools
     cursor-cli
+    t3code
     #languages
     python313
     python313Packages.pip
